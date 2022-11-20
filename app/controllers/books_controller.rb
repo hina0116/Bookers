@@ -1,6 +1,6 @@
 class BooksController < ApplicationController
   def new
-    @book = Book.all
+    @book = Book.new
   end
 
   def create
@@ -9,7 +9,8 @@ class BooksController < ApplicationController
       flash[:notice1] = "Book was successfully created."
       redirect_to book_path(@book.id)
     else
-      render :new
+      @books = Book.all
+      render :index
     end
   end
 

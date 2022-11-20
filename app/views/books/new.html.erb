@@ -9,6 +9,7 @@
 <% end %>
 
 <%= form_with model: @book, url: '/books', method: :post do |f| %>
+<div class="form">
   <p>Title</p>
   <%= f.text_field :title %>
 
@@ -17,5 +18,5 @@
 
   <p></p>
   <%= f.submit 'Create Book' %>
-
+</div>
 <% end %>

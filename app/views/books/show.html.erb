@@ -1,11 +1,16 @@
 <div class="flash">
-    <%= flash[:notice1] %>
-    <%= flash[:notice2] %>
+ <div class="show-text">
+  <%= flash[:notice1] %>
+  <%= flash[:notice2] %>
+ </div>
 </div>
 
+<div class="show-text">
 <p>Title:<%= @book.title %></p>
-
+</div>
+<div class="show-text">
 <p>Body:<%= @book.body %></p>
+</div>
 
 <div class="button">
 <%= link_to "Edit", edit_book_path(@book.id) %>
