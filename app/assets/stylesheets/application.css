@@ -21,6 +21,7 @@
 
 main {
   width: 100%;
+  font-family: sans-serif;
 }
 
 th, td {
@@ -32,7 +33,7 @@ h2 {
 }
 
 .show-text {
-  margin: 20px 40px;
+  margin: 30px 40px;
 }
 
 .form {
@@ -40,5 +41,6 @@ h2 {
 }
 
 .flash {
+  margin: 30px 40px;
   color: green;
 }
