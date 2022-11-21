@@ -19,9 +19,8 @@
   box-sizing: border-box;
 }
 
-main {
-  width: 100%;
-  font-family: sans-serif;
+body {
+  font-family: verdana, arial, helvetica, sans-serif;
 }
 
 th, td {
